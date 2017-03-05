@@ -1,0 +1,169 @@
+body{
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+/*###########################  HEADER General ###################################*/
+header{
+    width: 100%;
+    height: 20%;
+    margin-top: -30px;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 25px;
+    margin-left: -20%;
+}
+
+.chorrada:hover{
+    color:plum;
+}
+
+p{
+    text-align: center;
+    margin-top: -25px;
+    margin-left: 10%;
+}
+
+.chorrada:hover{
+    color:plum;
+}
+
+#tamMenu{
+    width: inherit;
+    height: 100px;
+    justify-content: flex-end;
+    margin-top: -10px;
+}
+
+#menuHeader > li{
+    display: inline-flex; /*<-- preguntar por esto*/
+    list-style: none;
+    margin-right: 5%;
+    width: 150px;
+    text-align: center;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px black solid;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+#menuHeader li a{
+    color: white;
+    width: 150px;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+/*para crear un sub menu y hacer que desaparezcan*/
+#menuHeader li ul{
+    display: none;
+    position: absolute;
+}
+
+/*aqui hacemos que se muestren al pasar el raton por encima.*/
+#menuHeader li:hover > ul{
+    display: block;
+}
+/*le damos formato al menu desplegable*/
+#menuHeader li ul li{
+    list-style: none;
+    margin-top: 20%;
+    margin-bottom: 20px;
+}
+
+#menuHeader li ul{
+    background-color: plum;
+    margin-top: 50px;
+    width: 150px;
+    padding: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: 1px solid black;
+    
+}
+
+#menuHeader li a:hover{
+    background-color: plum;
+    /*preguntar a ana como hacer para que cuando pase el boton por encima donde esta el submenu quede en violeta*/
+    color: black;
+    width: 150px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+/*###########################  HEADER General ###################################*/
+
+
+/*###########################  SECTION General ###################################*/
+section{
+    width: 100%;
+    height: 60%;
+    background-color: plum;
+}
+
+
+/*###########################  SECTION General ###################################*/
+
+/*###########################  FOOTER ###################################*/
+.pie{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 200px;
+    margin-top: -24px;
+}
+
+.pie h3{
+    width: 500px;
+    font-size: 25px;
+    padding-top: 40px;
+    margin-left: 5%;
+    margin-bottom: 4%;
+}
+
+.pie a{
+    color: plum;
+    margin-left: 5%;
+    font-size: 17px;
+}
+
+/*###########################  FOOTER ###################################*/
+
+/*###########################  FOOTER Rarito ###################################*/
+.rarito{
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    margin-top: 127%;
+    padding-top: 17px;
+}
+
+.rarito h3{
+    font-size: 25px;
+    margin-left: 5%;
+    margin-bottom: 4%;
+    width: 500px;
+}
+
+.rarito a{
+    color: plum;
+    margin-left: 5%;
+}
+
+/*###########################  FOOTER Rarito ###################################*/
+
