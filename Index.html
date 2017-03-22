@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Index del trabajo para DIW</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, width=device-width"/>
+<link rel="stylesheet" href="css/responisveIndex.css"/>
+<script type="text/javascript" src="./js/index.js"></script>
+<script type="text/javascript">
+ /*Cargador de eventos al iniciar la página*/
+    window.addEventListener('load',iniciar,false);
+
+    /*Contador inicializado en cero*/
+    var contador=0;
+
+    function iniciar(){
+        setInterval('cambiarImg()',2000);
+    }
+
+    function cambiarImg(){
+        var obj=document.getElementById('slider');
+        var obj2=obj.getElementsByTagName('img');
+
+        if(contador==obj2.length){
+            for(var i=0; i<obj2.length; i++){
+                obj2[i].style.opacity='0';
+                contador--;
+            }
+            obj2[contador].style.opacity='1';
+        }
+        else{
+        obj2[contador].style.opacity='1';
+        contador++
+        }
+    }
+</script>
+</head>
+<body>
+    <header> 
+        <h1 class="chorrada">Lumos Compostela</h1>
+            <p class="chorrada">Quidditch Team</p>
+        <nav id="tamMenu">
+            <ul id="menuHeader">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Equipo.html">Equipo</a>
+                    <ul>
+                        <li><a href="Jugadores.html">Jugadores</a></li>
+                    </ul>
+                    
+                </li>
+                <li><a href="Tienda.html">Tienda</a> </li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="login.html"> Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="pag-prin">
+        <article id="slider">
+                <img alt="foto de equipo 1" alt="foto 1 slide" src="imagenes/foto1.png"/>
+                <img alt="foto de equipo 2"  alt="foto 2 slide" src="imagenes/foto2.jpg"/>
+                <img alt="foto de equipo 3" alt="foto 3 slide" src="imagenes/foto3.png"/>
+                <img alt="foto de equipo 4" alt="foto 4 slide" src="imagenes/foto4.png"/>
+        </article>
+        <h2>Noticias</h2>
+        <hr/>
+        <article id="txt">
+        
+            
+        <!-- intentar meter un script donde podamos escribir las noticias -->    
+            
+        </article>
+        
+        
+        <article id="InsertarTexto">
+            <label for="noticia">Titulo</label>
+            <input alt="Introducir titulo" type='text' name='noticia' id="titulo" />
+            <input alt="noticia" type="text "id="nova">
+            <input type='button' id='b' name='enviar' value='enviar' onclick="insertarTexto()">
+        </article>
+    </section>
+  <footer class="pie"> 
+      <p>Siguenos en nuestras redes sociales.</p>
+      
+      <a href="#">Lumos en Facebook</a>
+      <a href="#">Lumos en Instagram</a>
+      
+  </footer>
+</body>
+</html>

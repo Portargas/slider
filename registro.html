@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Index del trabajo para DIW</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, width=device-width"/>
+<link rel="stylesheet" href="css/responsiveRegistro.css"/>
+<script type="text/javascript" src="./js/registro.js"></script>
+</head>
+<body>
+    <header> 
+         <h1 class="chorrada">Lumos Compostela</h1>
+            <p class="chorrada">Quidditch Team</p>
+        <nav id="tamMenu">
+            <ul id="menuHeader">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Equipo.html">Equipo</a>
+                    <ul>
+                        <li><a href="Jugadores.html">Jugadores</a></li>
+                        
+                    </ul>
+                    
+                </li>
+                <li><a href="Tienda.html">Tienda</a> </li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="login.html">Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="registro">
+    
+        <h2> Registrate.</h2>
+        
+        <article>
+            <form method="post" onsubmit="return validar()">
+                <label for="Nombre" id="nom">Nombre</label>
+                <input alt="nombre" type="text" name="Nombre" id="nombre" value=""/>
+                <br/>
+                
+                <label for="Correo" id="correo">Correo electronico</label>
+                <input alt="correo" type="email" name="Correo" id="in-correo" value=""/>
+                <br/>
+                <label for="pass" id="contra">Contraseña</label>
+                <input alt="password" type="password" name="pass" id="pass" value=""/>
+                <br/>
+    
+                <input type="submit" id="boton" name="enviar" value="enviar">
+            </form>
+
+        </article>
+    </section>
+    <footer class="pie"> 
+      <p>Siguenos en nuestras redes sociales.</p>
+      
+      <a href="#">Lumos en Facebook</a>
+      <a href="#">Lumos en Instagram</a>
+      
+  </footer>
+    </body>
+</html>

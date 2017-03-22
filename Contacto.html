@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Index del trabajo para DIW</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, width=device-width"/>
+<link rel="stylesheet" href="css/responisveContacto.css"/>
+<script type="text/javascript" src="./js/contacto.js"></script>
+</head>
+<body>
+    <header> 
+         <h1 class="chorrada">Lumos Compostela</h1>
+            <p class="chorrada">Quidditch Team</p>
+        <nav id="tamMenu">
+            <ul id="menuHeader">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Equipo.html">Equipo</a>
+                    <ul>
+                        <li><a href="Jugadores.html">Jugadores</a></li>
+                        
+                    </ul>
+                    
+                </li>
+                <li><a href="Tienda.html">Tienda</a> </li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="login.html">Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contacto">
+    
+        <h2>Contacta con nosotros.</h2>
+        <article>
+            
+            <!-- intentar hacer la verificacion de correo electronico en el imput -->    
+            
+            <form onsubmit="return validar()">
+                <label for="Nombre" id="nom">Nombre</label>
+                <input alt="nombre" type="text" name="Nombre" id="nombre" value=""/>
+                <br/>
+                <br/>
+                
+                <label for="Correo" id="correo">Correo electronico</label>
+                <input alt="correo" type="email" name="Correo" id="in-correo" value=""/>
+                <br/>
+                <br/>
+                
+                <label for="Correo" id="asunt">Asunto</label>
+                <input alt="tipo de asunto" type="text" name="Asunto" id="asunto" value=""/>
+                <br/>
+                <br/>
+                <textarea id="mensaje" alt="texto" rows="25" cols="45">
+
+                </textarea>
+                
+                <input type="submit" id="boton" name="enviar" value="enviar">
+            </form>
+
+        </article>
+    </section>
+  <footer class="pie"> 
+      <p>Siguenos en nuestras redes sociales.</p>
+      
+      <a href="#">Lumos en Facebook</a>
+      <a href="#">Lumos en Instagram</a>
+      
+  </footer>
+</body>
+</html>
