@@ -4,8 +4,8 @@
 <title>Index del trabajo para DIW</title>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1, width=device-width"/>
-<link rel="stylesheet" href="css/responisveLogin.css"/>
-<script type="text/javascript" src="./js/loginCookies.js"></script>
+<link rel="stylesheet" href="css/responsiveRegistro.css"/>
+<script type="text/javascript" src="./js/registro.js"></script>
 </head>
 <body>
     <header> 
@@ -28,36 +28,34 @@
             </ul>
         </nav>
     </header>
-    <section id="login">
+    <section id="registro">
     
-        <h2>Inicio Sesión.</h2>
+        <h2> Registrate.</h2>
+        
         <article>
-            
-            <!-- intentar hacer la verificacion de correo electronico en el imput -->    
-            
-            <form method="post">
-                <label for="Nombre" id="nom">Usuario</label>
-                <input type="text" name="Nombre" id="nombre" value=""/>
-                <br/>
+            <form method="post" onsubmit="return validar()">
+                <label for="Nombre" id="nom">Nombre</label>
+                <input alt="nombre" type="text" name="Nombre" id="nombre" value=""/>
                 <br/>
                 
-                <label for="password" id="cont">Contraseña</label>
-                <input type="password" name="password" id="pass" value=""/>
+                <label for="Correo" id="correo">Correo electronico</label>
+                <input alt="correo" type="email" name="Correo" id="in-correo" value=""/>
                 <br/>
+                <label for="pass" id="contra">Contraseña</label>
+                <input alt="password" type="password" name="pass" id="pass" value=""/>
                 <br/>
-                
-                <input type="submit" id="boton" name="enviar" value="enviar" onclick="escribirCookie()">
-                <a href="registro.html"><input type="button" id="boton" name="regis" value="registrarse"></a>
+    
+                <input type="submit" id="boton" name="enviar" value="enviar">
             </form>
 
         </article>
     </section>
-  <footer class="pie"> 
+    <footer class="pie"> 
       <p>Siguenos en nuestras redes sociales.</p>
       
       <a href="#">Lumos en Facebook</a>
       <a href="#">Lumos en Instagram</a>
       
   </footer>
-</body>
+    </body>
 </html>
